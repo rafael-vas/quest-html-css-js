@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(../imgs/bg-repeat.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    min-height: 100vh;
+    font-size: 15px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    padding: 0 100px;
+}
+
+.container .info,
+.container .contact {
+    width: 350px;
+
+}
+
+.container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #FFF;
+}
+
+.container .info .title {
+    width: 100%;
+    font-weight: 700;
+}
+
+.container .info .text {
+    padding-right: 55px;
+    font-weight: 300;
+}
+
+.container .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contact form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 7px; */
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.container .contact form .required-text,
+.container .contact form .required-fields {
+    margin-bottom: 10px;
+}
+
+.container .contact form .required-fields {
+    margin-bottom: 12px;
+}
+
+.container .contact form .required-text {
+    font-size: 8px;
+    color: #F52E2E;
+}
+
+.container .contact form .required-text.hidden {
+    opacity: 0;
+    margin-bottom: 5px;
+}
+
+.container .contact form .field {
+    border-radius: 5px;
+    border: 1px solid #5f5f5f;
+    padding: 8px 10px;
+    font-family: inherit;
+}
+
+.container .contact form .field.required {
+    border: 1px solid #F52E2E;
+}
+
+.container .contact form .field.correct {
+    border: 1px solid #00C22B;
+}
+
+.container .contact form .field::placeholder {
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+.container .contact form .field:focus {
+    outline: 1px solid #adadad;
+    border: 1px solid #353535;
+}
+
+.container .contact form .field:not(.message) {
+    height: 35px;
+}
+
+.container .contact form .message.field {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.container .contact form .submit-btn {
+    font-family: inherit;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px 0;
+    background-color: #3CCC87;
+    border-radius: 5px;
+    border: none;
+    transition: background .2s ease;
+}
+.container .contact form .submit-btn:hover {
+    cursor: pointer;
+    background-color: #2ba86c;
+}
