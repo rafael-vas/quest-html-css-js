@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest HTML CSS JS</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <script src="src/js/index.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="info">
+            <h1 class="title">FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
+            <p class="text">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </section>
+        <section class="contact">
+            <form action="#">
+                <input class="text field" type="text" name="name" id="name" placeholder="Nome completo *">
+                <span class="required-text hidden">campo obrigatório</span>
+
+                <input class="email field" type="email" name="email" id="email" placeholder="Email *">
+                <span class="required-text hidden">campo obrigatório</span>
+
+                <input class="number field" type="number" name="number" id="number" placeholder="Telefone *">
+                <span class="required-text hidden">campo obrigatório</span>
+
+                <textarea class="message field" name="message" id="message" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+                <span class="required-text hidden">campo obrigatório</span>
+
+                <p class="required-fields">*campos obrigatórios</p>
+
+                <input class="submit-btn" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
